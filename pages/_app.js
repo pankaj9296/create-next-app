@@ -3,7 +3,7 @@ import { GeistProvider, CssBaseline } from '@geist-ui/react'
 function MyApp({ Component, pageProps }) {
   
   const myTheme = {
-      "type": "Custom",
+      "type": "light",
       "palette": {
         "success": "#6C63EE", // primary/theme color
         "link": "#6C63EE",
@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     }
   
   return (
-    <GeistProvider themes={[myTheme]} themeType="Custom">
+    <GeistProvider themes={[myTheme]} themeType="light">
       <CssBaseline />
       <Component {...pageProps} />
     </GeistProvider>
